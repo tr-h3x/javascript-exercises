@@ -1,4 +1,29 @@
 
+
+//Filter Method
+
+
+//const fruits = ["apple", "banana", "bread", "orange", "lemon"];
+
+//const newArray = fruits.filter((item) => item !== "bread")
+
+//console.log(newArray)
+//console.log(fruits)
+
+///////////////////////////////////////////////
+
+const removeFromArray = function(arr, num) {
+    let arr1 = [...arr];
+    newArray = arr1.filter((item) => item !== num);
+    console.log(newArray);
+}
+
+removeFromArray([1, 2, 3, 4], 3);
+
+///////////////////////////////////////////
+
+//Splice Method
+
 //const fruits = ["apple", "banana", "bread", "orange", "lemon"];
 
 //console.log(fruits);
@@ -16,23 +41,30 @@
 
 //console.log(removeItem(fruits, "bread"))
 
-///////////////////////////////////
 
-const removeFromArray = function(arr, item) {
-      newArray = [...arr];
-      const index = newArray.findIndex((element) => element === item);
-      if(index !== -1) {
-          newArray.splice(index, 1);
-          return newArray;
-      }
+//CODE FOR TOP EXERCISE W/ SPLICE
 
-}
+//const removeFromArray = function(arr, item) {
+  //    newArray = [...arr];
+  //    const index = newArray.findIndex((element) => element === item);
+  //    if(index !== -1) {
+  //        newArray.splice(index, 1);
+  //        return newArray;
+  //    }
 
-console.log(removeFromArray([1, 2, 3, 4], 3));
+//}
+
+//console.log(removeFromArray([1, 2, 3, 4], 3));
+
+//yt codementor js tut removing a specific element from an array 
+//pub 10/30/2020
 
 
-
-
+//ALL GARBAGE BEYOND THIS POINT!!!!!!!!!!!!////////////
+//             _/   \_
+//           _/       \__
+// _ _ __ __/             \__ _ _ __ 
+// POOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOP    
 
 //method 1//
 //const removeFromArray = function(firstArray, toRemove) {
