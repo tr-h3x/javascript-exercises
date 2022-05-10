@@ -12,17 +12,30 @@
 */
 
 ///////////////////////////////////////////////
-
-const removeFromArray = function(arr, num) {
+/*
+const removeFromArray = function(arr, itemToRemove) {
     let arr1 = [...arr];
-    newArray = arr1.filter((item) => item !== num);
+    newArray = arr1.filter((item) => item !== itemToRemove);
     console.log(newArray);
 }
 
 removeFromArray([1, 2, 3, "4", 3], "4");
 removeFromArray(["hey", 2, 3, "ho"], "hey", 3);
-
+*/
 ///////////////////////////////////////////
+
+const removeFromArray = (arr, ...itemToRemove) => {
+  array = arr.filter(item => {
+    return !itemToRemove.includes(item);
+    }); console.log(array)
+}
+//removeFromArray([1, 2, 3, 4], 1, 2, 3, 4);
+//removeFromArray([1, 2, 3, 4], 7, "tacos");
+//removeFromArray([1, 2, 3], "1", 3);
+//removeFromArray(["hey", 2, 3, "ho"], "hey", 3);
+//https://dev.to/_prosen/remove-multiple-item-from-an-array-in-javascript-2eei
+
+
 
 /*Splice Method
 
@@ -119,7 +132,9 @@ function sortArguments() {
     return sortedArgs
   }
   console.log(sortArguments(5, 3, 7, 1))
- Do not edit below this line
-module.exports = removeFromArray;
 
 */
+ //Do not edit below this line
+module.exports = removeFromArray;
+
+
