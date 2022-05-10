@@ -1,17 +1,32 @@
+
+
+const leapYears = function(year) {
+    if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(leapYears(34992));
+
+// Do not edit below this line
+module.exports = leapYears;
+
+/*
 const leapYears = function(year) {
 //leap years are / 4 i.e. 1984, 2004
-    if (year % 4 == 0) {
+    if (year % 400 == 0) {
         return "is a leap year";
-    }else {
+    } else if (year % 400 != 0 && year % 100 == 0 && year % 4 == 0)
+        return "is a leap year";
+     else 
         return "is not a leap year";
     }
 //years / 100 (i.e. 1800, 1900) != leap year UNLESS also / 400 (i.e. 1600, 2000)
-};
-console.log(leapYears(1984));
-// Do not edit below this line
-//module.exports = leapYears;
 
 
+
+*/
 
 /*
 # Exercise 06 - leapYears
