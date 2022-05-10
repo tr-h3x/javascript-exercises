@@ -1,3 +1,13 @@
+const removeFromArray = function(arr, ...itemToRemove) {
+  array = arr.filter(item => {
+    return !itemToRemove.includes(item);
+    }); console.log(array);
+}
+//removeFromArray([1, 2, 3, 4], 1, 2, 3, 4);
+removeFromArray([1, 2, 3, 4], 7, "tacos");
+//removeFromArray([1, 2, 3], "1", 3);
+removeFromArray(["hey", 2, 3, "ho"], "hey", 3);
+//https://dev.to/_prosen/remove-multiple-item-from-an-array-in-javascript-2eei
 
 
 /*Filter Method
@@ -23,17 +33,6 @@ removeFromArray([1, 2, 3, "4", 3], "4");
 removeFromArray(["hey", 2, 3, "ho"], "hey", 3);
 */
 ///////////////////////////////////////////
-
-const removeFromArray = (arr, ...itemToRemove) => {
-  array = arr.filter(item => {
-    return !itemToRemove.includes(item);
-    }); console.log(array)
-}
-//removeFromArray([1, 2, 3, 4], 1, 2, 3, 4);
-//removeFromArray([1, 2, 3, 4], 7, "tacos");
-//removeFromArray([1, 2, 3], "1", 3);
-//removeFromArray(["hey", 2, 3, "ho"], "hey", 3);
-//https://dev.to/_prosen/remove-multiple-item-from-an-array-in-javascript-2eei
 
 
 
@@ -134,7 +133,5 @@ function sortArguments() {
   console.log(sortArguments(5, 3, 7, 1))
 
 */
- //Do not edit below this line
+//Do not edit below this line
 module.exports = removeFromArray;
-
-
